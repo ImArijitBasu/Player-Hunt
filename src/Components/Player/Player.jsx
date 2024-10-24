@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types'
 
-const Player = ({player}) => {
+const Player = ({player , handleAddedPlayer}) => {
     const {name ,country , type , role , price , image} = player;
     return (
         <div>
@@ -23,7 +23,7 @@ const Player = ({player}) => {
                 </div>
                 <div className="flex justify-between items-center">
                     <p className='font-bold'>Price : ${price}</p>
-                    <button className='btn bg-white'>Choose Player</button>
+                    <button onClick={()=> handleAddedPlayer(player)} className='btn bg-white'>Choose Player</button>
                 </div>
                </div>
             </div>
@@ -31,7 +31,8 @@ const Player = ({player}) => {
     );
 };
 Player.propTypes ={
-    player : PropTypes.object.isRequired
+    player : PropTypes.object.isRequired,
+    // handleAddedPlayer : PropTypes.func.isRequired
 }
 
 export default Player;
