@@ -1,11 +1,21 @@
+// tailwind.config.js
+
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg-shadow': "url('./src/assets/bg-shadow.png')", // Correct way to add the image
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    require('daisyui'),
+  ],
+};
+
+export default config;
