@@ -9,7 +9,7 @@ const config = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-shadow': "url('./src/assets/bg-shadow.png')", // Correct way to add the image
+        'bg-shadow': "url('./assets/bg-shadow.png')", 
       },
     },
   },

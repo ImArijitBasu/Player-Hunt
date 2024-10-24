@@ -1,9 +1,9 @@
-import React from "react";
 
+import logoImage from '../../assets/logo.png'
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 py-5">
+      <div className=" container mx-auto navbar bg-base-100 py-5 bg-white/70 fixed top-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="font-bold menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
                 <a>Home</a>
@@ -41,13 +41,13 @@ const Header = () => {
             </ul>
           </div>
           <a className="btn btn-ghost w-20">
-            <img src="src\assets\logo.png" alt="" />
+            <img src={logoImage} alt="" />
           </a>
         </div>
 
         <div className="navbar-end">
           <div className="hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu menu-horizontal px-1 font-bold">
               <li>
                 <a>Home</a>
               </li>

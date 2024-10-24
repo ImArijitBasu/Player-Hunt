@@ -5,7 +5,7 @@
       "country": "India",
       "type": "right-hand-bat",
       "role": "batter",
-      "price": 15000000,
+      "price": 150000,
       "image": "https://i.ibb.co.com/0VDq3v5/th.webp"
     },
     {
@@ -14,7 +14,7 @@
       "country": "Australia",
       "type": "left-hand-bat",
       "role": "batter",
-      "price": 12000000,
+      "price": 120000,
       "image": "https://i.ibb.co.com/TccTgM5/th.jpg"
     },
     {
@@ -23,7 +23,7 @@
       "country": "England",
       "type": "right-hand-bat",
       "role": "all rounder",
-      "price": 17000000,
+      "price": 170000,
       "image": "https://i.ibb.co.com/pydcxh5/th.jpg"
     },
     {
@@ -32,7 +32,7 @@
       "country": "New Zealand",
       "type": "right-hand-bat",
       "role": "batter",
-      "price": 14000000,
+      "price": 140000,
       "image": "https://i.ibb.co.com/F8KRSK2/OIP.jpg"
     },
     {
@@ -41,7 +41,7 @@
       "country": "Afghanistan",
       "type": "spin bowler",
       "role": "bowler",
-      "price": 9000000,
+      "price": 90000,
       "image": "https://i.ibb.co.com/hCJY3vS/OIP.jpg"
     },
     {
@@ -50,7 +50,7 @@
       "country": "New Zealand",
       "type": "left-arm-fast",
       "role": "bowler",
-      "price": 8500000,
+      "price": 85000,
       "image": "https://i.ibb.co.com/8d54n1k/download.jpg"
     },
     {
@@ -59,7 +59,7 @@
       "country": "Australia",
       "type": "right-arm-fast",
       "role": "bowler",
-      "price": 11000000,
+      "price": 110000,
       "image": "https://i.ibb.co.com/BsWfPRK/OIP.jpg"
     },
     {
@@ -68,7 +68,7 @@
       "country": "Bangladesh",
       "type": "left-hand-bat",
       "role": "all rounder",
-      "price": 13000000,
+      "price": 130000,
       "image": "https://i.ibb.co.com/VJ5JdsW/OIP.jpg"
     },
     {
@@ -77,7 +77,7 @@
       "country": "Pakistan",
       "type": "right-hand-bat",
       "role": "batter",
-      "price": 12500000,
+      "price": 125000,
       "image": "https://i.ibb.co.com/GRXrBzp/download.jpg"
     },
     {
@@ -86,7 +86,7 @@
       "country": "India",
       "type": "right-arm-fast",
       "role": "bowler",
-      "price": 10000000,
+      "price": 100000,
       "image": "https://i.ibb.co.com/GnYWv6N/OIP.jpg"
     },
     {
@@ -95,7 +95,7 @@
       "country": "England",
       "type": "right-hand-bat",
       "role": "batter",
-      "price": 13500000,
+      "price": 135000,
       "image": "https://i.ibb.co.com/MBfWzzY/download.jpg"
     }
   ]
