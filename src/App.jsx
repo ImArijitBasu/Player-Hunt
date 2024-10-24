@@ -12,24 +12,39 @@ function App() {
   const [isActive, setIsActive] = useState({
     player: true,
   });
+  const [coin , setCoin] = useState(0)
   const [addedPlayers , setAddedPlayers] = useState([]);
+
+
+  const increaseCoin =() =>{
+    const coinValue = 600000 ;
+    const newCoin = coin + coinValue;
+    setCoin(newCoin)
+  }
 
   const handleAddedPlayer = (player) => {
       const doubleCheck = addedPlayers.find((play) => play.id == player.id);
       
-      if(doubleCheck){
-        toast.error(`hey ${player.name} is already there`)
-      }
-      else if(addedPlayers.length >= 6) {
-        toast.error(`hey I'm totally full`)
+      if(coin > player.price){
+        if(doubleCheck){
+          toast.error(`hey ${player.name} is already there`)
+        }
+        else if(addedPlayers.length >= 6) {
+          toast.error(`hey I'm totally full`)
+        }
+        else{
+          
+          const newAddedPlayer = [...addedPlayers , player];
+          setAddedPlayers(newAddedPlayer)
+          const newCoinValue = coin-player.price;
+          setCoin(newCoinValue)
+          toast.success(`${player.name} added successfully`)
+        }
+  
       }
       else{
-        
-        const newAddedPlayer = [...addedPlayers , player];
-        setAddedPlayers(newAddedPlayer)
-        toast.success(`${player.name} added successfully`)
+        toast.error(`you need more ${player.price - coin} money 😩`)
       }
-
 
   }
 
@@ -48,8 +63,8 @@ function App() {
   return (
     <>
       <div className="container mx-auto px-2">
-        <Header></Header>
-        <Banner></Banner>
+        <Header coin={coin}></Header>
+        <Banner increaseCoin={increaseCoin}></Banner>
         <ButtonContainer addedPlayers={addedPlayers}  handleToggle={handleToggle} isActive={isActive}></ButtonContainer>
         <Main addedPlayers={addedPlayers} handleAddedPlayer={handleAddedPlayer} isActive={isActive}></Main>
       </div>

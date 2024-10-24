@@ -1,6 +1,6 @@
 
 import logoImage from '../../assets/logo.png'
-const Header = () => {
+const Header = ({coin}) => {
   return (
     <div>
       <div className=" container mx-auto navbar bg-base-100 py-5 bg-white/70 fixed top-0">
@@ -64,7 +64,7 @@ const Header = () => {
           </div>
           <div className="bg-slate-50 px-5 py-2 rounded-md border flex items-center space-x-2">
             <a className="">
-              {0} Coin 
+              {coin} Coin 
             </a>
             <img
               width="22"

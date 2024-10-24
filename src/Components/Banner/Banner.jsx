@@ -1,6 +1,6 @@
 import bannerImage from "../../assets/banner-main.png";
 
-const Banner = () => {
+const Banner = ({increaseCoin}) => {
   return (
     <div>
       {/* first part  */}
@@ -10,7 +10,7 @@ const Banner = () => {
           Assemble Your Ultimate Dream 11 Cricket Team
         </p>
         <p className="text-gray-300 text-xl">Beyond Boundaries Beyond Limits</p>
-        <button className="btn bg-yellow-400 hover:bg-yellow-500 text-lg outline outline-2 outline-white outline-offset-4">
+        <button className="btn bg-yellow-400 hover:bg-yellow-500 text-lg outline outline-2 outline-white outline-offset-4" onClick={increaseCoin}>
           Claim Free Credit
         </button>
       </div>
