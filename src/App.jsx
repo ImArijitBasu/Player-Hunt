@@ -50,8 +50,8 @@ function App() {
       <div className="container mx-auto px-2">
         <Header></Header>
         <Banner></Banner>
-        <ButtonContainer  handleToggle={handleToggle} isActive={isActive}></ButtonContainer>
-        <Main handleAddedPlayer={handleAddedPlayer} isActive={isActive}></Main>
+        <ButtonContainer addedPlayers={addedPlayers}  handleToggle={handleToggle} isActive={isActive}></ButtonContainer>
+        <Main addedPlayers={addedPlayers} handleAddedPlayer={handleAddedPlayer} isActive={isActive}></Main>
       </div>
       <div className="">
         <Footer></Footer>
