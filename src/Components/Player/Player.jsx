@@ -32,7 +32,7 @@ const Player = ({player , handleAddedPlayer}) => {
 };
 Player.propTypes ={
     player : PropTypes.object.isRequired,
-    // handleAddedPlayer : PropTypes.func.isRequired
+    handleAddedPlayer : PropTypes.func.isRequired,
 }
 
 export default Player;

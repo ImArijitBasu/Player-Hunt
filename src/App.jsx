@@ -20,6 +20,7 @@ function App() {
     const coinValue = 600000 ;
     const newCoin = coin + coinValue;
     setCoin(newCoin)
+    toast.success("Money Added successfully");
   }
 
   const handleAddedPlayer = (player) => {
@@ -49,9 +50,9 @@ function App() {
   }
 const handleDelete = (player) =>{
   const remainingPlayer = addedPlayers.filter((p)=> p.id !== player.id);
-  const newCoinBalence = coin + player.price;
+  const newCoinBalance = coin + player.price;
   setAddedPlayers(remainingPlayer)
-  setCoin(newCoinBalence)
+  setCoin(newCoinBalance)
 }
 
   const handleToggle = (status) => {

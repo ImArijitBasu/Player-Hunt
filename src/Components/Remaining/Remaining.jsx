@@ -11,6 +11,8 @@ const Remaining = ({ addedPlayers , handleDelete ,handleReturnToPlayers }) => {
 };
 Remaining.propTypes = {
   addedPlayers : PropTypes.array.isRequired,
+  handleDelete : PropTypes.func.isRequired,
+  handleReturnToPlayers : PropTypes.func.isRequired,
 }
 
 export default Remaining;

@@ -12,6 +12,7 @@ const Selected = ({addedPlayers , handleDelete}) => {
 };
 Selected.propTypes = {
   addedPlayers : PropTypes.array.isRequired,
+  handleDelete : PropTypes.func.isRequired
 }
 
 export default Selected;

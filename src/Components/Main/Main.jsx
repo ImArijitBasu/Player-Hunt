@@ -11,7 +11,8 @@ Main.propTypes = {
   isActive : PropTypes.object.isRequired,
   handleAddedPlayer : PropTypes.func.isRequired,
   addedPlayers : PropTypes.array.isRequired,
-
+  handleDelete : PropTypes.func.isRequired,
+  handleReturnToPlayers : PropTypes.func.isRequired,
 }
 
 export default Main;
