@@ -1,5 +1,5 @@
 
-# **PLAYERHUNT** ->
+# **[PLAYERHUNT](https://ph-assignment-7-arijit.netlify.app/)** ->
 ## *A website based on Cricket player bidding*
 
 ![Logo](https://i.ibb.co.com/sP8vd25/logo.png)
