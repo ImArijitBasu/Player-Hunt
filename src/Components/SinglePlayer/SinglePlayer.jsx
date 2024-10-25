@@ -23,7 +23,8 @@ const SinglePlayer = ({player , handleDelete}) => {
   );
 };
 SinglePlayer.propTypes = {
-  player : PropTypes.object.isRequired
+  player : PropTypes.object.isRequired,
+  handleDelete : PropTypes.func.isRequired
 }
 
 export default SinglePlayer;

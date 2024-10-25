@@ -74,7 +74,7 @@ const handleDelete = (player) =>{
       }
       else{
         toast.error("Not Enough Space To ADD More")
-        toast.warn('delete someone to add someone')
+        toast.warn('delete someone to add more')
       }
   }
   return (
