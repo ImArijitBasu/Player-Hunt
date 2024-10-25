@@ -48,7 +48,6 @@ function App() {
 
   }
 const handleDelete = (player) =>{
-  console.log(player.name);
   const remainingPlayer = addedPlayers.filter((p)=> p.id !== player.id);
   const newCoinBalence = coin + player.price;
   setAddedPlayers(remainingPlayer)
@@ -66,13 +65,25 @@ const handleDelete = (player) =>{
       });
     }
   };
+
+  const handleReturnToPlayers = () => {
+      if(addedPlayers.length < 6){
+        setIsActive({
+          player: true
+        })
+      }
+      else{
+        toast.error("Not Enough Space To ADD More")
+        toast.warn('delete someone to add someone')
+      }
+  }
   return (
     <>
       <div className="container mx-auto px-2">
         <Header coin={coin}></Header>
         <Banner increaseCoin={increaseCoin}></Banner>
         <ButtonContainer addedPlayers={addedPlayers}  handleToggle={handleToggle} isActive={isActive}></ButtonContainer>
-        <Main handleDelete={handleDelete} addedPlayers={addedPlayers} handleAddedPlayer={handleAddedPlayer} isActive={isActive}></Main>
+        <Main handleReturnToPlayers={handleReturnToPlayers} handleDelete={handleDelete} addedPlayers={addedPlayers} handleAddedPlayer={handleAddedPlayer} isActive={isActive}></Main>
       </div>
       <div className="">
         <Footer></Footer>

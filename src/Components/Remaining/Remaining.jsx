@@ -1,11 +1,11 @@
 
 import PropTypes from 'prop-types';
 import Selected from "../Selected/Selected";
-const Remaining = ({ addedPlayers , handleDelete }) => {
+const Remaining = ({ addedPlayers , handleDelete ,handleReturnToPlayers }) => {
   return (
     <div>
       <Selected addedPlayers={addedPlayers} handleDelete={handleDelete}></Selected>
-      <div className="btn bg-yellow-500" >Add More Players</div>
+      <div onClick={handleReturnToPlayers} className="btn bg-yellow-500" >Add More Players</div>
     </div>
   );
 };
