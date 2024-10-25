@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 
 const Player = ({player , handleAddedPlayer}) => {
-    const {name ,country , type , role , price , image} = player;
+    const {name ,country , type , role , price , image , bowlingType} = player;
     return (
         <div>
             <div className="bg-slate-50 w-full rounded-2xl p-6 border">
@@ -19,7 +19,7 @@ const Player = ({player , handleAddedPlayer}) => {
                <p className='font-bold'>Ratting</p>
                 <div className="flex justify-between items-center">
                     <p className='font-bold'>{type}</p>
-                    <p>{type}</p>
+                    <p>{bowlingType}</p>
                 </div>
                 <div className="flex justify-between items-center">
                     <p className='font-bold'>Price : ${price}</p>

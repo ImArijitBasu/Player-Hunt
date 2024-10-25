@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types'
 const SinglePlayer = ({player , handleDelete}) => {
-    const {name , type , image , price} = player
+    const {name , role , image , price} = player
   return (
     <div>
       <div className="border flex justify-between items-center rounded-2xl p-2 my-8">
@@ -9,7 +9,7 @@ const SinglePlayer = ({player , handleDelete}) => {
           <img className="w-20 h-20 object-cover p-2 rounded-3xl" src={image} alt="" />
           <div className="">
             <p className="text-lg font-bold">{name}</p>
-            <p className="">{type}</p>
+            <p className="">{role}</p>
             <p>${price}</p>
           </div>
         </div>

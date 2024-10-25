@@ -1,102 +1,112 @@
 [
-    {
-      "id": 1,
-      "name": "Virat Kohli",
-      "country": "India",
-      "type": "right-hand-bat",
-      "role": "batter",
-      "price": 150000,
-      "image": "https://i.ibb.co.com/0VDq3v5/th.webp"
-    },
-    {
-      "id": 2,
-      "name": "David Warner",
-      "country": "Australia",
-      "type": "left-hand-bat",
-      "role": "batter",
-      "price": 120000,
-      "image": "https://i.ibb.co.com/TccTgM5/th.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Ben Stokes",
-      "country": "England",
-      "type": "right-hand-bat",
-      "role": "all rounder",
-      "price": 170000,
-      "image": "https://i.ibb.co.com/pydcxh5/th.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Kane Williamson",
-      "country": "New Zealand",
-      "type": "right-hand-bat",
-      "role": "batter",
-      "price": 140000,
-      "image": "https://i.ibb.co.com/F8KRSK2/OIP.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Rashid Khan",
-      "country": "Afghanistan",
-      "type": "spin bowler",
-      "role": "bowler",
-      "price": 90000,
-      "image": "https://i.ibb.co.com/hCJY3vS/OIP.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Trent Boult",
-      "country": "New Zealand",
-      "type": "left-arm-fast",
-      "role": "bowler",
-      "price": 85000,
-      "image": "https://i.ibb.co.com/8d54n1k/download.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Pat Cummins",
-      "country": "Australia",
-      "type": "right-arm-fast",
-      "role": "bowler",
-      "price": 110000,
-      "image": "https://i.ibb.co.com/BsWfPRK/OIP.jpg"
-    },
-    {
-      "id": 8,
-      "name": "Shakib Al Hasan",
-      "country": "Bangladesh",
-      "type": "left-hand-bat",
-      "role": "all rounder",
-      "price": 130000,
-      "image": "https://i.ibb.co.com/VJ5JdsW/OIP.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Babar Azam",
-      "country": "Pakistan",
-      "type": "right-hand-bat",
-      "role": "batter",
-      "price": 125000,
-      "image": "https://i.ibb.co.com/GRXrBzp/download.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Jasprit Bumrah",
-      "country": "India",
-      "type": "right-arm-fast",
-      "role": "bowler",
-      "price": 100000,
-      "image": "https://i.ibb.co.com/GnYWv6N/OIP.jpg"
-    },
-    {
-      "id": 11,
-      "name": "Jos Buttler",
-      "country": "England",
-      "type": "right-hand-bat",
-      "role": "batter",
-      "price": 135000,
-      "image": "https://i.ibb.co.com/MBfWzzY/download.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "type": "right-hand-bat",
+    "role": "batter",
+    "price": 150000,
+    "image": "https://i.ibb.co.com/0VDq3v5/th.webp",
+    "bowlingType": "N/A"
+  },
+  {
+    "id": 2,
+    "name": "David Warner",
+    "country": "Australia",
+    "type": "left-hand-bat",
+    "role": "batter",
+    "price": 120000,
+    "image": "https://i.ibb.co.com/TccTgM5/th.jpg",
+    "bowlingType": "N/A"
+  },
+  {
+    "id": 3,
+    "name": "Ben Stokes",
+    "country": "England",
+    "type": "right-hand-bat",
+    "role": "all rounder",
+    "price": 170000,
+    "image": "https://i.ibb.co.com/pydcxh5/th.jpg",
+    "bowlingType": "right-arm-fast"
+  },
+  {
+    "id": 4,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "type": "right-hand-bat",
+    "role": "batter",
+    "price": 140000,
+    "image": "https://i.ibb.co.com/F8KRSK2/OIP.jpg",
+    "bowlingType": "N/A"
+  },
+  {
+    "id": 5,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "type": "spin bowler",
+    "role": "bowler",
+    "price": 90000,
+    "image": "https://i.ibb.co.com/hCJY3vS/OIP.jpg",
+    "bowlingType": "spin bowler"
+  },
+  {
+    "id": 6,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "type": "left-arm-fast",
+    "role": "bowler",
+    "price": 85000,
+    "image": "https://i.ibb.co.com/8d54n1k/download.jpg",
+    "bowlingType": "left-arm-fast"
+  },
+  {
+    "id": 7,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "type": "right-arm-fast",
+    "role": "bowler",
+    "price": 110000,
+    "image": "https://i.ibb.co.com/BsWfPRK/OIP.jpg",
+    "bowlingType": "right-arm-fast"
+  },
+  {
+    "id": 8,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "type": "left-hand-bat",
+    "role": "all rounder",
+    "price": 130000,
+    "image": "https://i.ibb.co.com/VJ5JdsW/OIP.jpg",
+    "bowlingType": "both-hand-ball"
+  },
+  {
+    "id": 9,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "type": "right-hand-bat",
+    "role": "batter",
+    "price": 125000,
+    "image": "https://i.ibb.co.com/GRXrBzp/download.jpg",
+    "bowlingType": "N/A"
+  },
+  {
+    "id": 10,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "type": "right-arm-fast",
+    "role": "bowler",
+    "price": 100000,
+    "image": "https://i.ibb.co.com/GnYWv6N/OIP.jpg",
+    "bowlingType": "right-arm-fast"
+  },
+  {
+    "id": 11,
+    "name": "Jos Buttler",
+    "country": "England",
+    "type": "right-hand-bat",
+    "role": "batter",
+    "price": 135000,
+    "image": "https://i.ibb.co.com/MBfWzzY/download.jpg",
+    "bowlingType": "N/A"
+  }
+]
