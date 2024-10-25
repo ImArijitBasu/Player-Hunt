@@ -6,7 +6,7 @@ import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [isActive, setIsActive] = useState({
@@ -30,7 +30,7 @@ function App() {
           toast.error(`hey ${player.name} is already there`)
         }
         else if(addedPlayers.length >= 6) {
-          toast.error(`hey I'm totally full`)
+          toast.error(`Hey , I'm totally full (●'◡'●)`)
         }
         else{
           
@@ -38,16 +38,22 @@ function App() {
           setAddedPlayers(newAddedPlayer)
           const newCoinValue = coin-player.price;
           setCoin(newCoinValue)
-          toast.success(`${player.name} added successfully`)
+          toast.success(`${player.name} added successfully 🥵`)
         }
   
       }
       else{
-        toast.error(`you need more ${player.price - coin} money 😩`)
+        toast.error(`you need more ${player.price - coin} money 🤑`)
       }
 
   }
-
+const handleDelete = (player) =>{
+  console.log(player.name);
+  const remainingPlayer = addedPlayers.filter((p)=> p.id !== player.id);
+  const newCoinBalence = coin + player.price;
+  setAddedPlayers(remainingPlayer)
+  setCoin(newCoinBalence)
+}
 
   const handleToggle = (status) => {
     if (status == "Available") {
@@ -66,7 +72,7 @@ function App() {
         <Header coin={coin}></Header>
         <Banner increaseCoin={increaseCoin}></Banner>
         <ButtonContainer addedPlayers={addedPlayers}  handleToggle={handleToggle} isActive={isActive}></ButtonContainer>
-        <Main addedPlayers={addedPlayers} handleAddedPlayer={handleAddedPlayer} isActive={isActive}></Main>
+        <Main handleDelete={handleDelete} addedPlayers={addedPlayers} handleAddedPlayer={handleAddedPlayer} isActive={isActive}></Main>
       </div>
       <div className="">
         <Footer></Footer>

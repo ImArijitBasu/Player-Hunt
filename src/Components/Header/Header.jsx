@@ -1,5 +1,6 @@
 
-import logoImage from '../../assets/logo.png'
+import logoImage from '../../assets/logo.png';
+import PropTypes from 'prop-types'
 const Header = ({coin}) => {
   return (
     <div>
@@ -77,5 +78,8 @@ const Header = ({coin}) => {
     </div>
   );
 };
+Header.propTypes ={
+  coin : PropTypes.number.isRequired
+}
 
 export default Header;

@@ -1,7 +1,6 @@
-import React from "react";
 
-const SinglePlayer = ({player}) => {
-    console.log(player);
+import PropTypes from 'prop-types'
+const SinglePlayer = ({player , handleDelete}) => {
     const {name , type , image , price} = player
   return (
     <div>
@@ -15,7 +14,7 @@ const SinglePlayer = ({player}) => {
           </div>
         </div>
         <div className="">
-          <div className="btn">
+          <div onClick={()=>handleDelete(player)} className="btn">
             <i className="fa-solid fa-trash text-red-600 "></i>
           </div>
         </div>
@@ -23,5 +22,8 @@ const SinglePlayer = ({player}) => {
     </div>
   );
 };
+SinglePlayer.propTypes = {
+  player : PropTypes.object.isRequired
+}
 
 export default SinglePlayer;

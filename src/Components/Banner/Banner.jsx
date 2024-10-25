@@ -1,5 +1,5 @@
 import bannerImage from "../../assets/banner-main.png";
-
+import PropTypes from 'prop-types'
 const Banner = ({increaseCoin}) => {
   return (
     <div>
@@ -17,5 +17,8 @@ const Banner = ({increaseCoin}) => {
     </div>
   );
 };
+Banner.propTypes = {
+  increaseCoin : PropTypes.func.isRequired,
+}
 
 export default Banner;

@@ -1,15 +1,17 @@
-import logo from '../../assets/logo.png'
+import PropTypes from 'prop-types'
 import SinglePlayer from "../SinglePlayer/SinglePlayer";
-const Selected = ({addedPlayers}) => {
-    console.log(addedPlayers)
+const Selected = ({addedPlayers , handleDelete}) => {
   return (
     <div>
         {
-            addedPlayers.map(player => <SinglePlayer key={player.id} player={player}></SinglePlayer> )
+            addedPlayers.map(player => <SinglePlayer handleDelete={handleDelete} key={player.id} player={player}></SinglePlayer> )
         }
 
     </div>
   );
 };
+Selected.propTypes = {
+  addedPlayers : PropTypes.array.isRequired,
+}
 
 export default Selected;
